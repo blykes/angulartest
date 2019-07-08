@@ -1,0 +1,9 @@
+<p></p>
+
+<p>{{isYes}}</p>
+<p>{{isNo}}</p>
+<p>Where to go for lunch</p>
+<div *ngFor = "let voter of votedBy ">
+<app-votedetails [voters] = "voter" (voted) = "methodParent($event)"></app-votedetails>
+
+</div>
